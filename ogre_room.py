@@ -1,5 +1,5 @@
 from bug_room import bug_room # Room 4 Jose
-from magic_room import magic_room, proceed
+from magic_room import magic_room
 
 # Ryan, room 1
 

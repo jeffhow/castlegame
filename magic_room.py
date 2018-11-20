@@ -12,32 +12,32 @@ def magic_room():
     while True:
         choice = input('> ')
         
-        if "fire" or "ignis" in choice.lower():
+        if "fire" in choice.lower() or "ignis" in choice.lower():
             
             print("'I see that you like burning things down.'")
             print("You have learned Ignis!")
-            proceed()
+            proceed('fire')
             
-        elif "spark" or "scintillam" in choice.lower():
+        elif "spark" in choice.lower() or "scintillam" in choice.lower():
             
             print("'That will SHOCK most people, get it?'")
             print("You have learned Scintillam!")
-            proceed()
+            proceed('spark')
             
-        elif "god of the sword" or "gladius ad deum" in choice.lower():
+        elif "god of the sword" in choice.lower() or "gladius ad deum" in choice.lower():
             
             print("Why would want that spell, all it does is make you able to use a power magical sword... oh well.")
             print("You have learned Gladius ad Deum!")
-            proceed()
+            proceed('pointy')
         else:
             
             print("You have to pick a book.")
 
-def proceed():      
+def proceed(spell):      
     print("'Hope you picked the right one...' says the old man")
     print("smoke cam into the room blinding you.")
     print("As soon as the smoked cleared all that was left was empty shelves and an empty table.")
     print("The old man vanished including the books.")
     print("Behind where the old man was sitting there's a strange door that reads 'Boss Room'")
     print("You took a deep breath and enter the Boss Room.")
-    boss_room()
+    boss_room(spell)

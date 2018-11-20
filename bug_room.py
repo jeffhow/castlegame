@@ -19,13 +19,13 @@ def bug_room():
             print("Bye spider. Also, gross by the way.")
             print("Now the door is clear and you enter the boss room.")
 
-            boss_room()
+            boss_room('fire')
             
         elif "spear" in choice.lower():
             print("You take the spear and throw it at the spider. The spider runs away!")
             print("Now the door is clear and you enter the boss room.")
             
-            boss_room()
+            boss_room('pointy')
         else:
             print("I got no idea what that means.")
         
